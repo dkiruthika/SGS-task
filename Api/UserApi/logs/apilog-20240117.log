@@ -1,0 +1,26 @@
+[2024-01-17 22:28:13.785 +05:30  INF]  Now listening on: https://localhost:7174
+[2024-01-17 22:28:13.999 +05:30  INF]  Now listening on: http://localhost:5079
+[2024-01-17 22:28:14.004 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2024-01-17 22:28:14.005 +05:30  INF]  Hosting environment: Development
+[2024-01-17 22:28:14.005 +05:30  INF]  Content root path: D:\Api\UserApi\UserApi
+[2024-01-17 22:28:15.706 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7174/swagger/index.html - null null
+[2024-01-17 22:28:16.325 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7174/swagger/index.html - 200 null text/html;charset=utf-8 630.8577ms
+[2024-01-17 22:28:16.351 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - null null
+[2024-01-17 22:28:16.351 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7174/_vs/browserLink - null null
+[2024-01-17 22:28:16.360 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 10.3448ms
+[2024-01-17 22:28:16.473 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7174/_vs/browserLink - 200 null text/javascript; charset=UTF-8 123.1687ms
+[2024-01-17 22:28:16.656 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7174/swagger/v1/swagger.json - null null
+[2024-01-17 22:28:16.961 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7174/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 305.2145ms
+[2024-01-17 22:29:02.859 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7174/api/User/Add User - application/json 111
+[2024-01-17 22:29:02.878 +05:30  INF]  CORS policy execution successful.
+[2024-01-17 22:29:02.882 +05:30  INF]  Executing endpoint 'UserApi.Controllers.UserController.AddUser (UserApi)'
+[2024-01-17 22:29:02.917 +05:30  INF]  Route matched with {action = "AddUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AddUser(UserApi.Models.User) on controller UserApi.Controllers.UserController (UserApi).
+[2024-01-17 22:29:03.159 +05:30  INF]  UserController starts executing
+[2024-01-17 22:29:04.270 +05:30  INF]  Executed DbCommand (43ms) [Parameters=[@p0='?' (Size = 17), @p1='?' (DbType = Boolean), @p2='?' (Size = 6), @p3='?' (Size = 69)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Email", "IsActive", "Name", "Password")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+[2024-01-17 22:29:04.331 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2024-01-17 22:29:04.338 +05:30  INF]  Executed action UserApi.Controllers.UserController.AddUser (UserApi) in 1414.6744ms
+[2024-01-17 22:29:04.338 +05:30  INF]  Executed endpoint 'UserApi.Controllers.UserController.AddUser (UserApi)'
+[2024-01-17 22:29:04.348 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7174/api/User/Add User - 200 null text/plain; charset=utf-8 1497.1933ms

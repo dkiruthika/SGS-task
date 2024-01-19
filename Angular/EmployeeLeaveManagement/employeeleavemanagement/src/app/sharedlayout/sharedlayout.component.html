@@ -1,0 +1,15 @@
+<div *ngIf="this.userService.isLoggedIn" class="container-full d-flex" >
+    <div class="sidebar" id="sidebar">
+        <ul class="list">
+            <li [routerLink]="['/leaveRequest']">Leave request</li>
+            <li><a href="#">Leave approval</a></li>
+        </ul>
+    </div>
+    <div class="px-3 h-100">
+    <router-outlet></router-outlet>
+    
+</div>
+</div>
+<div *ngIf="!this.userService.isLoggedIn">
+<router-outlet></router-outlet>
+</div>

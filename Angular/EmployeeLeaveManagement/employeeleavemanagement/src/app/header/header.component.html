@@ -1,0 +1,17 @@
+<nav class="navbar navbar-light bg-dark d-flex justify-content-between ">
+    <div></div>
+    <div class="my-2" style="text-align: center;">
+        <img class="img-fluid" src="./assets/sgslogo-removebg-preview.png" alt="Company Logo" width="100px" class="company-logo">
+    </div>
+    <div *ngIf="userService.isLoggedIn" >
+        <!-- <button mat-icon-button [matMenuTriggerFor]="beforeMenu"><mat-icon-b>account_circle</mat-icon></button> -->
+            <button mat-icon-button color="primary" [matMenuTriggerFor]="beforeMenu" aria-label="Example icon button with a vertical three dot icon">
+                <mat-icon>account_circle</mat-icon>
+                </button>
+
+            <mat-menu #beforeMenu="matMenu" xPosition="before">
+        <button mat-menu-item (click)="logout()">Logout</button>
+        </mat-menu>
+      </div>
+    <div *ngIf="!userService.isLoggedIn"></div>
+  

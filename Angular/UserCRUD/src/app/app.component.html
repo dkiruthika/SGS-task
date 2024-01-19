@@ -1,0 +1,14 @@
+<!-- Just an image -->
+<nav class="navbar navbar-light bg-dark d-flex justify-content-between mb-5">
+  <div></div>
+  <div class="my-2" style="text-align: center;">
+    <img class="img-fluid" src="./assets/sgslogo-removebg-preview.png" width="100px" >
+  </div>
+  <div *ngIf="userService.isloggedIn">
+    <i class="fa fa-user-circle" style="font-size:30px; color: aliceblue;" ></i>
+  </div>
+  <div *ngIf="!userService.isloggedIn"></div>
+</nav>    
+
+<app-
+<router-outlet></router-outlet>

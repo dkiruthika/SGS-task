@@ -1,0 +1,21 @@
+<div class="container my-5">
+    <div class="row">
+        <div class="col-4">
+            <form (ngSubmit) = "addUser()">
+                <div class="mb-3">
+                    <label for="exampleInputName" class="form-label">Name</label>
+                    <input name="name" type="email" class="form-control" id="exampleInputName" aria-describedby="emailHelp" [(ngModel)]="user.name">
+                  </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="user.email">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input name="password" type="password" class="form-control" id="exampleInputPassword1" [(ngModel)]="user.password">
+                </div>
+                <button type="submit" class="btn btn-primary" >Submit</button>
+              </form>
+        </div>
+    </div>
+  </div>

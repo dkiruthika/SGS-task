@@ -1,0 +1,15 @@
+<div class="container h-75 mt-5">
+    <div class="login-card">
+        <h2>Login</h2>
+        <form (ngSubmit)="login()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" [(ngModel)]="username" [required]="true">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" [(ngModel)]="password" [required]="true">
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
